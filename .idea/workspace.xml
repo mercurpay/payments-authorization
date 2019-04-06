@@ -1,7 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b08c25f-11ae-4176-9eb9-90045a9011ac" name="Default Changelist" comment="" />
+    <list default="true" id="9b08c25f-11ae-4176-9eb9-90045a9011ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/native-image.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/claudioed/authorization/domain/resources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/com.sun.activation.jakarta.activation-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/commons-codec.commons-codec-1.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/commons-io.commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/commons-logging.commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.quarkus.arc.arc-runtime-0.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-arc-runtime-0.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-core-runtime-0.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-jaxb-runtime-0.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-jsonp-runtime-0.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-resteasy-common-runtime-0.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-resteasy-runtime-0.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-undertow-runtime-0.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.smallrye.smallrye-config-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.undertow.undertow-core-2.0.19.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/io.undertow.undertow-servlet-2.0.19.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/javax.annotation.javax.annotation-api-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/javax.el.javax.el-api-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/javax.enterprise.cdi-api-2.0.SP1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/javax.inject.javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/javax.interceptor.javax.interceptor-api-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/javax.validation.validation-api-2.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/javax.xml.bind.jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/net.jcip.jcip-annotations-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.apache.httpcomponents.httpclient-4.5.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.apache.httpcomponents.httpcore-4.4.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.eclipse.microprofile.config.microprofile-config-api-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.glassfish.javax.json-1.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.graalvm.sdk.graal-sdk-1.0.0-rc13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.logging.jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.logging.jboss-logging-annotations-2.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.logmanager.jboss-logmanager-embedded-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.resteasy.resteasy-core-4.0.0.Beta8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.resteasy.resteasy-core-spi-4.0.0.Beta8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.slf4j.slf4j-jboss-logging-1.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.spec.javax.servlet.jboss-servlet-api_4.0_spec-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec-1.0.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec-1.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.threads.jboss-threads-3.0.0.Alpha4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.xnio.xnio-api-3.7.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.jboss.xnio.xnio-nio-3.7.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.osgi.org.osgi.annotation.versioning-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.reactivestreams.reactive-streams-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.slf4j.slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.common.wildfly-common-1.5.0.Final-format-001.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-asn1-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-auth-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-auth-server-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-base-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-credential-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-permission-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-ssl-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-util-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-x500-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-x500-cert-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lib/org.wildfly.security.wildfly-elytron-x500-cert-util-2.0.0.Alpha1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payment-authorization-1.0-SNAPSHOT-runner.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payment-authorization-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quarkus.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2019-04-06T14-20-10_101.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tech.claudioed.authorization.domain.resourcesTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tech.claudioed.authorization.domain.resourcesTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tech/claudioed/authorization/domain/NativeresourcesIT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tech/claudioed/authorization/domain/resourcesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/META-INF/build-config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/META-INF/quarkus-default-config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/META-INF/services/io.quarkus.arc.ComponentsProvider" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/arc/ActivateRequestContextInterceptor_Bean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/arc/runtime/LifecycleEventRunner_Bean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/arc/setup/Default_ComponentsProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/deployment/steps/ArcAnnotationProcessor$build4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/deployment/steps/ConfigBuildStep$validateConfigProperties5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/deployment/steps/LifecycleEventsBuildStep$startupEvent10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/deployment/steps/LoggingResourceProcessor$setupLoggingRuntimeInit2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/deployment/steps/LoggingResourceProcessor$setupLoggingStaticInit1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/deployment/steps/ResteasyScanningProcessor$setupInjection6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/deployment/steps/UndertowArcIntegrationBuildStep$integrateRequestContext7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/deployment/steps/UndertowBuildStep$boot9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/deployment/steps/UndertowBuildStep$build8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/runner/ApplicationImpl1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/runner/AutoFeature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/runner/GeneratedMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/runtime/generated/BuildTimeConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/runtime/generated/BuildTimeConfigRoot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/runtime/generated/RunTimeConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/io/quarkus/runtime/generated/RunTimeConfigRoot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/javax/enterprise/context/control/ActivateRequestContext_Shared_AnnotationLiteral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-classes/tech/claudioed/authorization/domain/resources_Bean.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/claudioed/authorization/domain/service/CheckAuthCodeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="465">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/claudioed/authorization/domain/repository/AuthCodeRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,7 +188,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/claudioed/authorization/domain/CheckedAuthCode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,6 +227,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -162,6 +262,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -270,6 +371,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -348,23 +450,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554571235114</updated>
-      <workItem from="1554571238062" duration="3583000" />
+      <workItem from="1554571238062" duration="3815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3583000" />
+    <option name="totallyTimeSpent" value="3815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-262" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Graph Database Console" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32970297" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run with VisualVM" />
@@ -468,7 +569,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/claudioed/authorization/domain/CheckedAuthCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -509,7 +610,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/claudioed/authorization/domain/repository/AuthCodeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -518,8 +619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/claudioed/authorization/domain/service/CheckAuthCodeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

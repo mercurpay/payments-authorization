@@ -1,8 +1,0 @@
-2019-04-06 14:20:07,804 mbp-de-claudio surefirebooter2290057168439096288.jar[91850] INFO  [io.qua.dep.QuarkusAugmentor] (main) Beginning quarkus augmentation
-2019-04-06 14:20:08,025 mbp-de-claudio surefirebooter2290057168439096288.jar[91850] DEBUG [org.jbo.threads] (main) JBoss Threads version 3.0.0.Alpha4
-2019-04-06 14:20:08,976 mbp-de-claudio surefirebooter2290057168439096288.jar[91850] INFO  [io.qua.dep.QuarkusAugmentor] (main) Quarkus augmentation completed in 1172ms
-2019-04-06 14:20:09,596 mbp-de-claudio surefirebooter2290057168439096288.jar[91850] DEBUG [org.xnio] (main) XNIO version 3.7.0.Final
-2019-04-06 14:20:09,619 mbp-de-claudio surefirebooter2290057168439096288.jar[91850] DEBUG [org.xni.nio] (main) XNIO NIO Implementation Version 3.7.0.Final
-2019-04-06 14:20:09,873 mbp-de-claudio surefirebooter2290057168439096288.jar[91850] INFO  [io.quarkus] (main) Quarkus 0.12.0 started in 0.868s. Listening on: http://[::]:8081
-2019-04-06 14:20:09,875 mbp-de-claudio surefirebooter2290057168439096288.jar[91850] INFO  [io.quarkus] (main) Installed features: [cdi, resteasy]
-2019-04-06 14:20:11,995 mbp-de-claudio surefirebooter2290057168439096288.jar[91850] INFO  [io.quarkus] (main) Quarkus stopped in 0.016s
