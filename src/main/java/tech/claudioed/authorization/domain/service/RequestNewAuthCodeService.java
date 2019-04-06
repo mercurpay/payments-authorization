@@ -1,18 +1,26 @@
 package tech.claudioed.authorization.domain.service;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
+import org.slf4j.Logger;
 import tech.claudioed.authorization.domain.AuthCode;
+import tech.claudioed.authorization.domain.repository.AuthCodeRepository;
 import tech.claudioed.authorization.domain.resources.data.RequestNewAuthCode;
 
-/**
- * @author claudioed on 2019-04-06.
- * Project payment-authorization
- */
+/** @author claudioed on 2019-04-06. Project payment-authorization */
 @ApplicationScoped
 public class RequestNewAuthCodeService {
 
-  public AuthCode requestNew(RequestNewAuthCode requestNewAuthCode){
-    return null;
-  }
+  @Inject
+  private AuthCodeRepository authCodeRepository;
 
+  @Inject
+  private Logger logger;
+
+  public AuthCode requestNew(RequestNewAuthCode requestNewAuthCode) {
+    logger.info("UserId {} requesting new auth-code",requestNewAuthCode.getUserId());
+    final AuthCode authCode = this.authCodeRepository.register(requestNewAuthCode);
+    logger.info("UserId {} requested new auth code {} successfully ",requestNewAuthCode.getUserId(),authCode.getId());
+    return authCode;
+  }
 }

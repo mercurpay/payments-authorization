@@ -20,25 +20,19 @@ import tech.claudioed.authorization.domain.resources.data.RequestNewAuthCode;
 @ApplicationScoped
 public class MongoAuthCodeRepository implements AuthCodeRepository {
 
-  private final Logger logger;
-
-  private final MongoClient mongoClient;
-
-  private final String database;
-
-  private final Integer validBy;
+  @Inject
+  private Logger logger;
 
   @Inject
-  public MongoAuthCodeRepository(
-      Logger logger,
-      MongoClient mongoClient,
-      @ConfigProperty(name = "mongo.user") String database,
-      @ConfigProperty(name = "auth.valid.by") Integer validBy) {
-    this.logger = logger;
-    this.mongoClient = mongoClient;
-    this.database = database;
-    this.validBy = validBy;
-  }
+  private MongoClient mongoClient;
+
+  @Inject
+  @ConfigProperty(name = "mongo.database",defaultValue = "AUTHORIZATION")
+  private String database;
+
+  @Inject
+  @ConfigProperty(name = "auth.valid.by")
+  private Integer validBy;
 
   @Override
   public AuthCode register(RequestNewAuthCode requestNewAuthCode) {

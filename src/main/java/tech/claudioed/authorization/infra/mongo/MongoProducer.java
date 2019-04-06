@@ -2,7 +2,6 @@ package tech.claudioed.authorization.infra.mongo;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientOptions;
-import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
 import javax.annotation.PreDestroy;
 import javax.enterprise.context.ApplicationScoped;
@@ -20,24 +19,12 @@ public class MongoProducer {
   private Logger logger;
 
   @Inject
-  @ConfigProperty(name = "mongo.user")
-  private String mongoUser;
-
-  @Inject
-  @ConfigProperty(name = "mongo.password")
-  private String mongoPassword;
-
-  @Inject
-  @ConfigProperty(name = "mongo.host")
+  @ConfigProperty(name = "mongo.host",defaultValue = "localhost")
   private String mongoHost;
 
   @Inject
   @ConfigProperty(name = "mongo.port", defaultValue = "27017")
   private int mongoPort;
-
-  @Inject
-  @ConfigProperty(defaultValue = "admin")
-  private String mongoAdminDb;
 
   private MongoClient mongoClient;
 
@@ -48,8 +35,7 @@ public class MongoProducer {
     if (this.mongoClient == null) {
       logger.info("Creating mongodb connection...");
       ServerAddress serverAddress = new ServerAddress(this.mongoHost, this.mongoPort);
-      MongoCredential mongoCredential = MongoCredential.createCredential(this.mongoUser, this.mongoAdminDb, this.mongoPassword.toCharArray());
-      this.mongoClient = new MongoClient(serverAddress, mongoCredential, MongoClientOptions.builder().build());
+      this.mongoClient = new MongoClient(serverAddress,MongoClientOptions.builder().build());
       logger.info("Connected to MongoDB server on {}:{}", this.mongoHost, this.mongoPort);
     }
     return mongoClient;
