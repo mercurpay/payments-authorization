@@ -31,7 +31,7 @@ public class MongoAuthCodeRepository implements AuthCodeRepository {
   private String database;
 
   @Inject
-  @ConfigProperty(name = "auth.valid.by")
+  @ConfigProperty(name = "auth.valid.by",defaultValue = "10")
   private Integer validBy;
 
   @Override

@@ -18,7 +18,7 @@ import tech.claudioed.authorization.domain.resources.data.RequestNewAuthCode;
 import tech.claudioed.authorization.domain.service.CheckAuthCodeService;
 import tech.claudioed.authorization.domain.service.RequestNewAuthCodeService;
 
-@Path("/authorization")
+@Path("/api/authorization")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class AuthorizationResources {
