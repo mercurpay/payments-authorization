@@ -19,11 +19,12 @@ public class CheckAuthCodeService {
   private Logger logger;
 
   public CheckedAuthCode check(RequestCheckAuthCode requestCheckAuthCode) {
-    this.logger.info("Checking auth code for userId {}", requestCheckAuthCode.getUserId());
-    final AuthCode authCode =
-        this.authCodeRepository.find(
+    this.logger.info("Checking auth code for userId {} ...", requestCheckAuthCode.getUserId());
+    final AuthCode authCode =  this.authCodeRepository.find(
             requestCheckAuthCode.getId(), requestCheckAuthCode.getUserId());
-
+    if(authCode.isExpired()){
+      logger.error("AuthCode id is {} expired",authCode.getId());
+    }
     return this.authCodeRepository.registerChecked(authCode);
   }
 }

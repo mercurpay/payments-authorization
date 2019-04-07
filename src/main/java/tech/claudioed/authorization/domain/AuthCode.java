@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.bson.Document;
+import tech.claudioed.authorization.domain.exception.AuthCodeExpired;
 
 /** @author claudioed on 2019-04-06. Project payment-authorization */
 @Data
@@ -33,4 +34,12 @@ public class AuthCode {
         .append("validUntil", this.validUntil)
         .append("value", this.value);
   }
+
+  public Boolean isExpired(){
+    if(this.validUntil.isAfter(LocalDateTime.now())){
+      throw new AuthCodeExpired(this);
+    }
+    return true;
+  }
+
 }
