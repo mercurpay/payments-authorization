@@ -11,16 +11,14 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import javax.ws.rs.core.UriInfo;
-import tech.claudioed.authorization.domain.AuthCode;
 import tech.claudioed.authorization.domain.CheckedAuthCode;
+import tech.claudioed.authorization.domain.resources.data.AuthCodeData;
 import tech.claudioed.authorization.domain.resources.data.RequestCheckAuthCode;
 import tech.claudioed.authorization.domain.resources.data.RequestNewAuthCode;
 import tech.claudioed.authorization.domain.service.CheckAuthCodeService;
 import tech.claudioed.authorization.domain.service.RequestNewAuthCodeService;
 
-@Path("/api/authorization")
-@Produces(MediaType.APPLICATION_JSON)
-@Consumes(MediaType.APPLICATION_JSON)
+@Path("/api/authorizations")
 public class AuthorizationResources {
 
   @Inject
@@ -30,15 +28,18 @@ public class AuthorizationResources {
   private RequestNewAuthCodeService requestNewAuthCodeService;
 
   @POST
-  public Response requestNewAuthCode(
-      RequestNewAuthCode requestNewAuthCode, @Context UriInfo uriInfo) {
-    final AuthCode authCode = this.requestNewAuthCodeService.requestNew(requestNewAuthCode);
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
+  public Response requestNewAuthCode(RequestNewAuthCode requestNewAuthCode, @Context UriInfo uriInfo) {
+    final AuthCodeData authCode = this.requestNewAuthCodeService.requestNew(requestNewAuthCode);
     UriBuilder builder = uriInfo.getAbsolutePathBuilder();
     builder.path(authCode.getId());
-    return Response.created(builder.build()).entity(authCode).build();
+    return Response.ok(builder.build()).entity(authCode).build();
   }
 
   @PUT
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
   public Response checkAuthCode(RequestCheckAuthCode requestCheckAuthCode) {
     final CheckedAuthCode checkedAuthCode = this.checkAuthCodeService.check(requestCheckAuthCode);
     return Response.ok(checkedAuthCode).build();

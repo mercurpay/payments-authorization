@@ -31,6 +31,6 @@ public class AuthCode {
         .append("userId", this.userId)
         .append("createdAt", this.createdAt)
         .append("validUntil", this.validUntil)
-        .append("value", this.validUntil);
+        .append("value", this.value);
   }
 }
