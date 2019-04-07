@@ -2,12 +2,14 @@ package tech.claudioed.authorization.domain;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.bson.Document;
 import tech.claudioed.authorization.domain.exception.AuthCodeExpired;
+import tech.claudioed.authorization.domain.exception.AuthCodeInvalidValue;
 
 /** @author claudioed on 2019-04-06. Project payment-authorization */
 @Data
@@ -36,10 +38,17 @@ public class AuthCode {
   }
 
   public Boolean isExpired(){
-    if(this.validUntil.isAfter(LocalDateTime.now())){
+    if(this.validUntil.isBefore(LocalDateTime.now(ZoneOffset.UTC))){
       throw new AuthCodeExpired(this);
     }
-    return true;
+    return false;
+  }
+
+  public Boolean isSameValue(BigDecimal value){
+    if(!this.value.equals(value)){
+      throw new AuthCodeInvalidValue(this);
+    }
+    return true ;
   }
 
 }

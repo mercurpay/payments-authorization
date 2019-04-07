@@ -21,7 +21,7 @@ public class RequestNewAuthCodeService {
   public AuthCodeData requestNew(RequestNewAuthCode requestNewAuthCode) {
     logger.info("UserId {} requesting new auth-code",requestNewAuthCode.getUserId());
     final AuthCode authCode = this.authCodeRepository.register(requestNewAuthCode);
-    logger.info("UserId {} requested new auth code {} successfully ",requestNewAuthCode.getUserId(),authCode.getId());
+    logger.info("UserId {} requested new auth code {} successfully. Auth Code {} ",requestNewAuthCode.getUserId(),authCode.getId(),authCode.toString());
     return AuthCodeData.builder().id(authCode.getId()).userId(authCode.getUserId()).value(authCode.getValue()).build();
   }
 }

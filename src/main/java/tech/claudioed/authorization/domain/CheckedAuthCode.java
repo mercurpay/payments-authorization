@@ -24,6 +24,7 @@ public class CheckedAuthCode {
     return new Document()
         .append("_id", this.id)
         .append("usedAt", this.usedAt)
-        .append("data", this.data);
+        .append("data", this.data.toDoc());
+
   }
 }

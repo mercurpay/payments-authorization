@@ -22,8 +22,13 @@ public class CheckAuthCodeService {
     this.logger.info("Checking auth code for userId {} ...", requestCheckAuthCode.getUserId());
     final AuthCode authCode =  this.authCodeRepository.find(
             requestCheckAuthCode.getId(), requestCheckAuthCode.getUserId());
+    logger.info("AuthCode is valid until {}",authCode.getValidUntil().toString());
     if(authCode.isExpired()){
-      logger.error("AuthCode id is {} expired",authCode.getId());
+      logger.error("AuthCode is {} expired",authCode.getId());
+    }
+    logger.info("AuthCode value {}",authCode.getValue());
+    if(!authCode.isSameValue(requestCheckAuthCode.getValue())){
+      logger.error("AuthCode id is {} has different value",authCode.getId());
     }
     return this.authCodeRepository.registerChecked(authCode);
   }

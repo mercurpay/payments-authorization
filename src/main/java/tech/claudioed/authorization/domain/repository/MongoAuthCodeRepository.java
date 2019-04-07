@@ -6,10 +6,14 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.util.Date;
 import java.util.UUID;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import org.bson.Document;
+import org.bson.types.Decimal128;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.slf4j.Logger;
 import tech.claudioed.authorization.domain.AuthCode;
@@ -40,10 +44,10 @@ public class MongoAuthCodeRepository implements AuthCodeRepository {
     final MongoCollection<Document> dbCollection = db.getCollection("authcodes");
     final AuthCode authCode =
         AuthCode.builder()
-            .createdAt(LocalDateTime.now())
+            .createdAt(LocalDateTime.now(ZoneOffset.UTC))
             .userId(requestNewAuthCode.getUserId())
             .value(requestNewAuthCode.getValue())
-            .validUntil(LocalDateTime.now().plusMinutes(this.validBy))
+            .validUntil(LocalDateTime.now(ZoneOffset.UTC).plusMinutes(this.validBy))
             .id(UUID.randomUUID().toString())
             .build();
     dbCollection.insertOne(authCode.toDoc());
@@ -72,13 +76,14 @@ public class MongoAuthCodeRepository implements AuthCodeRepository {
     final FindIterable<Document> documents = dbCollection.find(query);
     final FindIterable<Document> doc = documents.limit(1);
     final Document data = doc.first();
+    final Decimal128 value = data.get("value", Decimal128.class);
     final AuthCode authCode =
         AuthCode.builder()
             .id(data.getString("_id"))
             .userId(data.getString("userId"))
-            .value(data.get("value", BigDecimal.class))
-            .validUntil(data.get("validUntil", LocalDateTime.class))
-            .createdAt(data.get("createdAt", LocalDateTime.class))
+            .value(value.bigDecimalValue())
+            .validUntil(data.get("validUntil", Date.class).toInstant().atZone(ZoneOffset.UTC).toLocalDateTime())
+            .createdAt(data.get("createdAt", Date.class).toInstant().atZone(ZoneOffset.UTC).toLocalDateTime())
             .build();
     return authCode;
   }
