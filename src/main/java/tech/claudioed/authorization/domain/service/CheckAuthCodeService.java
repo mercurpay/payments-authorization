@@ -13,10 +13,10 @@ import tech.claudioed.authorization.domain.resources.data.RequestCheckAuthCode;
 public class CheckAuthCodeService {
 
   @Inject
-  private AuthCodeRepository authCodeRepository;
+  AuthCodeRepository authCodeRepository;
 
   @Inject
-  private Logger logger;
+  Logger logger;
 
   public CheckedAuthCode check(RequestCheckAuthCode requestCheckAuthCode) {
     this.logger.info("Checking auth code for userId {} ...", requestCheckAuthCode.getUserId());

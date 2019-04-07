@@ -16,15 +16,15 @@ import org.slf4j.Logger;
 public class MongoProducer {
 
   @Inject
-  private Logger logger;
+  Logger logger;
 
   @Inject
   @ConfigProperty(name = "mongo.host",defaultValue = "localhost")
-  private String mongoHost;
+  String mongoHost;
 
   @Inject
   @ConfigProperty(name = "mongo.port", defaultValue = "27017")
-  private int mongoPort;
+  int mongoPort;
 
   private MongoClient mongoClient;
 

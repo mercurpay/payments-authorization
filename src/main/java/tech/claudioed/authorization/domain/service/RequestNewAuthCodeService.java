@@ -13,10 +13,10 @@ import tech.claudioed.authorization.domain.resources.data.RequestNewAuthCode;
 public class RequestNewAuthCodeService {
 
   @Inject
-  private AuthCodeRepository authCodeRepository;
+  AuthCodeRepository authCodeRepository;
 
   @Inject
-  private Logger logger;
+  Logger logger;
 
   public AuthCodeData requestNew(RequestNewAuthCode requestNewAuthCode) {
     logger.info("UserId {} requesting new auth-code",requestNewAuthCode.getUserId());

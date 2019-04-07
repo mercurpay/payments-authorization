@@ -22,10 +22,10 @@ import tech.claudioed.authorization.domain.service.RequestNewAuthCodeService;
 public class AuthorizationResources {
 
   @Inject
-  private CheckAuthCodeService checkAuthCodeService;
+  CheckAuthCodeService checkAuthCodeService;
 
   @Inject
-  private RequestNewAuthCodeService requestNewAuthCodeService;
+  RequestNewAuthCodeService requestNewAuthCodeService;
 
   @POST
   @Produces(MediaType.APPLICATION_JSON)
