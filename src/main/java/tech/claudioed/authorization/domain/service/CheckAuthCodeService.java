@@ -18,10 +18,10 @@ public class CheckAuthCodeService {
   @Inject
   Logger logger;
 
-  public CheckedAuthCode check(RequestCheckAuthCode requestCheckAuthCode) {
+  public CheckedAuthCode check(String id,RequestCheckAuthCode requestCheckAuthCode) {
     this.logger.info("Checking auth code for userId {} ...", requestCheckAuthCode.getUserId());
     final AuthCode authCode =  this.authCodeRepository.find(
-            requestCheckAuthCode.getId(), requestCheckAuthCode.getUserId());
+            id, requestCheckAuthCode.getUserId());
     logger.info("AuthCode is valid until {}",authCode.getValidUntil().toString());
     if(authCode.isExpired()){
       logger.error("AuthCode is {} expired",authCode.getId());

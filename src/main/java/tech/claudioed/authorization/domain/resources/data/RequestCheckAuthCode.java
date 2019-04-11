@@ -10,8 +10,6 @@ import lombok.Data;
 @Data
 public class RequestCheckAuthCode {
 
-  private String id;
-
   private String userId;
 
   private BigDecimal value;
