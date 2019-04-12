@@ -35,7 +35,7 @@ public class AuthorizationResources {
     final AuthCodeData authCode = this.requestNewAuthCodeService.requestNew(requestNewAuthCode);
     UriBuilder builder = uriInfo.getAbsolutePathBuilder();
     builder.path(authCode.getId());
-    return Response.ok(builder.build()).entity(authCode).build();
+    return Response.created(builder.build()).entity(authCode).build();
   }
 
   @PUT
